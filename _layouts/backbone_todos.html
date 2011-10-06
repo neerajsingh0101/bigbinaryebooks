@@ -1,0 +1,124 @@
+{% include header.html %}
+  <div id="header" class="container_12 clearfix">
+    <div id="logo">
+      <div><a href="/">Backbone todos in steps</a></div>
+    </div>
+    <div id="navigation">
+      <ul id="nav">
+        <li><a href="/">Ebooks</a></li>
+        <li><a href="http://BigBinary.com">BigBinary</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="content" class="container_12 clearfix">
+    <div class="grid_3 alpha sidebar">
+      <div class="block">
+        <ol>
+          {% if page.url == '/docs/backbone-todos/index.html' %}
+            <li>Getting started</li>
+          {% else %}
+            <li><a href="/docs/credit-cards/index.html">Getting started</a></li>
+          {% endif %}
+
+          {% if page.url == '/docs/credit-cards/javascript-files.html' %}
+            <li>Javascript files</li>
+          {% else %}
+            <li><a href="/docs/credit-cards/javascript-files.html">Javascript files</a></li>
+          {% endif %}
+
+          {% if page.url == '/docs/credit-cards/show-tooltip.html' %}
+            <li>Show tooltip</li>
+          {% else %}
+            <li><a href="/docs/credit-cards/show-tooltip.html">Show tooltip</a></li>
+          {% endif %}
+
+          {% if page.url == '/docs/credit-cards/authorization.html' %}
+            <li>Authorization & Capture</li>
+          {% else %}
+            <li><a href="/docs/credit-cards/authorization.html">Authorization & Capture</a></li>
+          {% endif %}
+
+          {% if page.url == '/docs/credit-cards/merchant-account.html' %}
+            <li>Merchant account</li>
+          {% else %}
+            <li><a href="/docs/credit-cards/merchant-account.html">Merchant Account</a></li>
+          {% endif %}
+
+
+          {% if page.url == '/docs/credit-cards/credit-card-processor.html' %}
+            <li>Credit card processor</li>
+          {% else %}
+            <li><a href="/docs/credit-cards/credit-card-processor.html">Credit card processor</a></li>
+          {% endif %}
+
+            <ul>
+              {% if page.url == '/docs/credit-cards/fee.html' %}
+                <li>Fee</li>
+              {% else %}
+                <li><a href="/docs/credit-cards/fee.html">Fee</a></li>
+              {% endif %}
+
+              {% if page.url == '/docs/credit-cards/interchange-plus.html' %}
+                <li>Interchange plus</li>
+              {% else %}
+                <li><a href="/docs/credit-cards/interchange-plus.html">Interchange plus</a></li>
+              {% endif %}
+
+              {% if page.url == '/docs/credit-cards/tiered.html' %}
+                <li>Tiered pricing</li>
+              {% else %}
+                <li><a href="/docs/credit-cards/tiered.html">Tiered pricing</a></li>
+              {% endif %}
+            </ul>
+
+          {% if page.url == '/docs/credit-cards/price_discrimination.html' %}
+            <li>Price discrimination</li>
+          {% else %}
+            <li><a href="/docs/credit-cards/price_discrimination.html">Price discrimination</a></li>
+          {% endif %}
+
+          {% if page.url == '/docs/credit-cards/resellers.html' %}
+            <li>Resellers</li>
+          {% else %}
+            <li><a href="/docs/credit-cards/resellers.html">Resellers</a></li>
+          {% endif %}
+
+          {% if page.url == '/docs/credit-cards/chargeback.html' %}
+            <li>Chargeback</li>
+          {% else %}
+            <li><a href="/docs/credit-cards/chargeback.html">Chargeback</a></li>
+          {% endif %}
+
+
+          {% if page.url == '/docs/credit-cards/debit_cards.html' %}
+            <li>Debit cards</li>
+          {% else %}
+            <li><a href="/docs/credit-cards/debit_cards.html">Debit cards</a></li>
+          {% endif %}
+
+          {% if page.url == '/docs/credit-cards/security.html' %}
+            <li>Security</li>
+          {% else %}
+            <li><a href="/docs/credit-cards/security.html">Security</a></li>
+          {% endif %}
+
+
+
+
+        </ol>
+      </div>
+
+      {% include wip.html %}
+    </div>
+    <div class="grid_9 omega guide">
+      {{ content }}
+      {% if page.previous_url and page.previous %}
+      <a href="{{ page.previous_url }}">&larr; {{ page.previous }}</a> &middot;
+      {% endif %}
+      {{ page.current }}
+      {% if page.next_url and page.next %}
+      &middot; <a href="{{ page.next_url }}">{{ page.next }} &rarr;</a>
+      {% endif %}
+    </div>
+{% include footer.html %}
