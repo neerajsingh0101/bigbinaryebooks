@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta http-equiv="Cache-control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <title>BigBinary - Merchant Account</title>
+
+  <meta name="description" content="credit card processing" />
+
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" />
+</head>
+
+<body>
+
+  <div id="header" class="container_12 clearfix">
+    <div id="logo">
+      <div><a href="/">Accepting credit cards</a></div>
+    </div>
+    <div id="navigation">
+      <ul id="nav">
+        <li><a href="/">Ebooks</a></li>
+        <li><a href="http://BigBinary.com">BigBinary</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="content" class="container_12 clearfix">
+    <div class="grid_3 alpha sidebar">
+      <div class="block">
+        <ol>
+          
+            <li><a href="/docs/credit-cards/index.html">Swiping credit card </a></li>
+          
+
+          
+            <li><a href="/docs/credit-cards/buying-online.html">Buying online</a></li>
+          
+
+          
+            <li><a href="/docs/credit-cards/settlement.html">Settlement</a></li>
+          
+
+          
+            <li><a href="/docs/credit-cards/authorization.html">Authorization & Capture</a></li>
+          
+
+          
+            <li>Merchant account</li>
+          
+
+
+          
+            <li><a href="/docs/credit-cards/credit-card-processor.html">Credit card processor</a></li>
+          
+
+            <ul>
+              
+                <li><a href="/docs/credit-cards/fee.html">Fee</a></li>
+              
+
+              
+                <li><a href="/docs/credit-cards/interchange-plus.html">Interchange plus</a></li>
+              
+
+              
+                <li><a href="/docs/credit-cards/tiered.html">Tiered pricing</a></li>
+              
+            </ul>
+
+          
+            <li><a href="/docs/credit-cards/price_discrimination.html">Price discrimination</a></li>
+          
+
+          
+            <li><a href="/docs/credit-cards/resellers.html">Resellers</a></li>
+          
+
+          
+            <li><a href="/docs/credit-cards/chargeback.html">Chargeback</a></li>
+          
+
+
+          
+            <li><a href="/docs/credit-cards/debit_cards.html">Debit cards</a></li>
+          
+
+          
+            <li><a href="/docs/credit-cards/security.html">Security</a></li>
+          
+
+
+
+
+        </ol>
+      </div>
+
+      <div class="block warning">
+  <p>
+    This ebook is a product of
+    <a href='http://BigBinary.com'>BigBinary</a>
+    .
+  </p>
+</div>
+
+    </div>
+    <div class="grid_9 omega guide">
+      <h1 id='merchant_account'>Merchant Account</h1>
+
+<p>Mary is good at making stuffed toys. She wants to sell them online and she wants customers to be able to purchase her toys using a credit card. In order to accept credit cards on her website, she needs two things:</p>
+
+<ul>
+<li>A Gateway Account</li>
+
+<li>A Merchant Account</li>
+</ul>
+
+<p>A Gateway account provides a method for encoding all the credit card information, such as the number, CVV code, zip code, address etc. The Gateway forwards all this data to Mary&#8217;s merchant account.</p>
+
+<p>The Merchant account is basically where all the money comes at the end of the day when all tranactions have been completed.</p>
+
+<p>Usually a bank provides merchant accounts to businesses who want to accept credit cards online. <a href='http://www.firstdata.com/en_us/home.html'>First Data</a> is one of the big players in this market. A financial institution that provides a business merchant account is called a &#8220;Merchant Account Provider&#8221;. Merchant Account Providers are also called &#8220;credit card processors&#8221;. The Gateway forwards any request to the Merchant Account Provider and they are responsible for processing the swiped or keyed credit card. They are also called &#8220;Merchant Bank&#8221; or &#8220;Acquirer&#8221;.</p>
+
+<p>A Merchant Account is a passthrough account. This means that money does not stay in the Merchant Account for long. All the money from credit card transactions comes to the Merchant Account when settlement is done at the end of the day and then in less than 24 hours the money from the Merchant Account is deposited into the company&#8217;s bank account.</p>
+
+<h2 id='risk'>Risk</h2>
+
+<p>As a business owner, if you request a Merchant Account, the bank will ask you a number of questions about your business. The merchant account holder bank is taking a great deal of risk, so they must make certain you are an honest business person.</p>
+
+<p>Let&#8217;s say that on the first day of business, Mary is able to sell 20,000 toys. A toy costs $10. So at the end of the day when settlement is done, Mary&#8217;s Merchant Account will have $200,000.00 in it. The next day she takes all this money and disappears without shipping the toys to the customers.</p>
+
+<p>Since the customers did not receive their toys, they will demand a refund from their credit card issuer. A chargeback is created for all of the refunds and the bank that issued the credit card looses a great deal of money. ( more on this later) This is why banks obtain thorough financial information from you before agreeing to become your merchant bank. They might also ask for some type of personal collateral. In some cases, they hold on to the money for a while before releasing it just in case the merchant receives complaints from users.</p>
+      
+      
+      
+    </div>
+  </div>
+
+  <div id="footer" class="container_12 clearfix">
+    <div id="copy">
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-xxxx");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>
+

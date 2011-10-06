@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta http-equiv="Cache-control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <title>BigBinary - Security</title>
+
+  <meta name="description" content="credit card processing" />
+
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" />
+</head>
+
+<body>
+
+  <div id="header" class="container_12 clearfix">
+    <div id="logo">
+      <div><a href="/">Accepting credit cards</a></div>
+    </div>
+    <div id="navigation">
+      <ul id="nav">
+        <li><a href="/">Ebooks</a></li>
+        <li><a href="http://BigBinary.com">BigBinary</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="content" class="container_12 clearfix">
+    <div class="grid_3 alpha sidebar">
+      <div class="block">
+        <ol>
+          
+            <li><a href="/docs/credit-cards/index.html">Swiping credit card </a></li>
+          
+
+          
+            <li><a href="/docs/credit-cards/buying-online.html">Buying online</a></li>
+          
+
+          
+            <li><a href="/docs/credit-cards/settlement.html">Settlement</a></li>
+          
+
+          
+            <li><a href="/docs/credit-cards/authorization.html">Authorization & Capture</a></li>
+          
+
+          
+            <li><a href="/docs/credit-cards/merchant-account.html">Merchant Account</a></li>
+          
+
+
+          
+            <li><a href="/docs/credit-cards/credit-card-processor.html">Credit card processor</a></li>
+          
+
+            <ul>
+              
+                <li><a href="/docs/credit-cards/fee.html">Fee</a></li>
+              
+
+              
+                <li><a href="/docs/credit-cards/interchange-plus.html">Interchange plus</a></li>
+              
+
+              
+                <li><a href="/docs/credit-cards/tiered.html">Tiered pricing</a></li>
+              
+            </ul>
+
+          
+            <li><a href="/docs/credit-cards/price_discrimination.html">Price discrimination</a></li>
+          
+
+          
+            <li><a href="/docs/credit-cards/resellers.html">Resellers</a></li>
+          
+
+          
+            <li><a href="/docs/credit-cards/chargeback.html">Chargeback</a></li>
+          
+
+
+          
+            <li><a href="/docs/credit-cards/debit_cards.html">Debit cards</a></li>
+          
+
+          
+            <li>Security</li>
+          
+
+
+
+
+        </ol>
+      </div>
+
+      <div class="block warning">
+  <p>
+    This ebook is a product of
+    <a href='http://BigBinary.com'>BigBinary</a>
+    .
+  </p>
+</div>
+
+    </div>
+    <div class="grid_9 omega guide">
+      <h1 id='pci_dss_compliancy'>PCI DSS compliancy</h1>
+
+<p>If a business transmits credit card data, then the business should be PCI DSS compliant. PCI stands for Payment Card Industry. DSS stands for Data Security Standard. PCI DSS is a security standard that sets policies and procedures for safeguarding the credit card information.</p>
+
+<p>PCI DSS is not a law. However, failure to be PCI DSS compliant can be devastating to a business. If a business is not PCI DSS compliant the bank and credit card companies can levy a fine exceeding $100,000.00 in some cases. Also, no credit card processing company will do business with a business that is not PCI DSS compliant.</p>
+
+<h1 id='how_to_become_pci_dss_compliant'>How to Become PCI DSS Compliant</h1>
+
+<p>One should follow all general guidelines regarding the security of any web based applications. One should ensure that code is not vulnerable to sql injection, XSS attack and other malicious code.</p>
+
+<ul>
+<li>Always use SSL</li>
+
+<li>Do not store credit card numbers or CVV number in database.</li>
+
+<li>Ensure that credit card numbers and CVV numbers are not placed in any log in any format.</li>
+</ul>
+
+<p>It is okay to store the last four digits of the credit card number in the database.</p>
+
+<p>Many processing companies provide a hosted page which directly submits the information to the Gateway. In such cases, the credit card information does not even come to the application. This is an easy method to ensure that a business is PCI DSS compliant.</p>
+      
+      
+      
+    </div>
+  </div>
+
+  <div id="footer" class="container_12 clearfix">
+    <div id="copy">
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-xxxx");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>
+

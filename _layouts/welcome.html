@@ -1,0 +1,25 @@
+{% include header.html %}
+  <div id="header" class="container_12 clearfix">
+    <div id="logo">
+      <div><a href="/">Ebooks</a></div>
+    </div>
+    <div id="navigation">
+      <ul id="nav">
+        <li><a href="/">Ebooks</a></li>
+        <li><a href="http://BigBinary.com">BigBinary</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="content" class="container_12 clearfix">
+
+
+    <div class="grid_3 alpha sidebar">
+      <div>
+        <img src="/images/vagrant_chilling.png" class="left" style='display:none;'/>
+      </div>
+    </div>
+    <div class="grid_9 omega welcome">
+      {{ content }}
+    </div>
+{% include footer.html %}
